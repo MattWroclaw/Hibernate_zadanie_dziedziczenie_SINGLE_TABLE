@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/dziedz_zadania</property>
+        <property name="hibernate.connection.username">sdatest</property>
+        <property name="hibernate.connection.password">Start123!</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL55Dialect</property>
+<!--        <property name="hibernate.hbm2ddl.auto">create-drop</property>-->
+        <mapping class="entity.Firma"/>
+        <mapping class="entity.Klient"/>
+        <mapping class="entity.Firma"/>
+        <mapping class="entity.Pracownik"/>
+<!--        <mapping class="sda.hibernate.entity.przyklad2.Telefon2"/>-->
+<!--        <mapping class="sda.hibernate.entity.przyklad2.Samochod2"/>-->
+<!--        <mapping class="sda.hibernate.entity.przyklad3.Produkt3"/>-->
+<!--        <mapping class="sda.hibernate.entity.przyklad3.Telefon3"/>-->
+<!--        <mapping class="sda.hibernate.entity.przyklad3.Samochod3"/>-->
+<!--        <mapping class="sda.hibernate.entity.przyklad4.Produkt4"/>-->
+<!--        <mapping class="sda.hibernate.entity.przyklad4.Telefon4"/>-->
+<!--        <mapping class="sda.hibernate.entity.przyklad4.Samochod4"/>-->
+    </session-factory>
+</hibernate-configuration>
